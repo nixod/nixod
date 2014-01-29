@@ -8,12 +8,23 @@
     },
     "require": {
         "php": ">=5.3.3",
-        "skafandri/jqdesktop": "dev-master"       
+        "skafandri/jqdesktop": "dev-master",
+        "phpseclib/phpseclib": ">=0.3.5",
+        "symfony/symfony": "~2.4",
+        "twig/extensions": "~1.0",
+        "symfony/assetic-bundle": "~2.3",
+        "sensio/distribution-bundle": "~2.3",
+        "sensio/framework-extra-bundle": "~3.0",
+        "sensio/generator-bundle": "~2.3"
     },
     "repositories": [
         {
             "type": "vcs",
             "url": "git@github.com:skafandri/jqdesktop.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:phpseclib/phpseclib.git"
         }
     ],
     "config": {
