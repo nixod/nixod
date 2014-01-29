@@ -2826,7 +2826,7 @@ class appDevDebugProjectContainer extends Container
             'kernel.root_dir' => '/home/spoof/work/nixod/app',
             'kernel.environment' => 'dev',
             'kernel.debug' => true,
-            'kernel.name' => 'ap_',
+            'kernel.name' => 'app',
             'kernel.cache_dir' => '/home/spoof/work/nixod/app/cache/dev',
             'kernel.logs_dir' => '/home/spoof/work/nixod/app/logs',
             'kernel.bundles' => array(
