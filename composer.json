@@ -1,0 +1,22 @@
+{
+    "name": "nixod/nixod",
+    "license": "MIT",
+    "type": "project",
+    "description": "*nix Online Desktop",
+    "autoload": {
+        "psr-0": { "": "app/" }
+    },
+    "require": {
+        "php": ">=5.3.3",
+        "skafandri/jqdesktop": "dev-master"       
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:skafandri/jqdesktop.git"
+        }
+    ],
+    "config": {
+        "bin-dir": "bin"
+    }
+}

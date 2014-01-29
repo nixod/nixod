@@ -1,0 +1,58 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
+    "hash": "5872506100723b05b62a3d2c135b5484",
+    "packages": [
+        {
+            "name": "skafandri/jqdesktop",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/skafandri/jqdesktop.git",
+                "reference": "49eaedaa499078e720d927375bba430148b1ddb4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/skafandri/jqdesktop/zipball/49eaedaa499078e720d927375bba430148b1ddb4",
+                "reference": "49eaedaa499078e720d927375bba430148b1ddb4",
+                "shasum": ""
+            },
+            "type": "library",
+            "license": [
+                "GPL-V2"
+            ],
+            "authors": [
+                {
+                    "name": "ilyes kooli",
+                    "email": "kooli.ilyes@gmail.com",
+                    "homepage": "http://www.ilyeskooli.com"
+                }
+            ],
+            "description": "jqDesktop JQuery plugin",
+            "homepage": "https://github.com/skafandri/jqdesktop",
+            "support": {
+                "source": "https://github.com/skafandri/jqdesktop/tree/master",
+                "issues": "https://github.com/skafandri/jqdesktop/issues"
+            },
+            "time": "2014-01-29 06:39:08"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "skafandri/jqdesktop": 20
+    },
+    "platform": {
+        "php": ">=5.3.3"
+    },
+    "platform-dev": [
+
+    ]
+}
