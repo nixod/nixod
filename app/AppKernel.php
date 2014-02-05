@@ -13,6 +13,14 @@ class AppKernel extends Kernel
             new Symfony\Bundle\TwigBundle\TwigBundle(),
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
+            new Nixod\KernelBundle\NixodKernelBundle(),
+            new Nixod\BaseBundle\NixodBaseBundle(),
+            new Module\BaseBundle\ModuleBaseBundle(),
+            new Module\ConsoleBundle\ModuleConsoleBundle(),
+            new Module\ExplorerBundle\ModuleExplorerBundle(),
+            new Module\CronBundle\ModuleCronBundle(),
+            new Module\SystemMonitorBundle\ModuleSystemMonitorBundle(),
+            new Module\UserBundle\ModuleUserBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

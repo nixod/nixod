@@ -1,0 +1,3 @@
+nixod_base:
+    resource: "@NixodBaseBundle/Resources/config/routing.xml"
+    prefix:   /
