@@ -1,0 +1,18 @@
+parameters:
+    module_cron:
+            layout:
+                title: "Cron"
+                width: 600
+                height: 300
+                visible: false
+                icon: "bundles/modulecron/images/cron.png"
+                closable: true
+                maximizable: true
+                minimizable: true
+                movable: true
+                resizable: true
+                defaultCloseOperation: 2
+                position: 'center'
+                showInTaskBar: true
+                showDesktopIcon: true
+                maximized: false

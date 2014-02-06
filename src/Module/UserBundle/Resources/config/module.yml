@@ -1,0 +1,19 @@
+parameters:
+    module_user:
+            layout:
+                title: "Users management"
+                width: 600
+                height: 300
+                visible: false
+                icon: "bundles/moduleuser/images/users.png"
+                closable: true
+                maximizable: true
+                minimizable: true
+                movable: true
+                resizable: true
+                defaultCloseOperation: 2
+                position: 'center'
+                showInTaskBar: true
+                showDesktopIcon: true
+                maximized: false
+            

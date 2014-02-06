@@ -1,0 +1,19 @@
+parameters:
+    module_explorer:
+            layout:
+                title: "File System"
+                width: 600
+                height: 300
+                visible: false
+                icon: "bundles/moduleexplorer/images/file-system.png"
+                closable: true
+                maximizable: true
+                minimizable: true
+                movable: true
+                resizable: true
+                defaultCloseOperation: 2
+                position: 'center'
+                showInTaskBar: true
+                showDesktopIcon: true
+                maximized: false
+                

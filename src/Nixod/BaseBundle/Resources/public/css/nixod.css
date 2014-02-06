@@ -1,0 +1,20 @@
+html,body{
+    height:100%;
+    overflow: hidden;
+    margin:0px;
+    padding:0px;
+    font-size: 12px;
+    font-family: 'Port Lligat Sans', sans-serif;
+}
+#desktop{
+    height:100%;
+}
+.jqdesktop-content{
+    background: url("/bundles/nixodbase/images/desktop.jpeg") no-repeat scroll 50% 50% #191919 !important;
+    
+}
+
+.nixod-window{
+    height: 100%;
+    overflow: auto;
+}

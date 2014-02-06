@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Nixod</title>
+        {% set themePath = 'bundles/nixodbase/resources/jquery-ui/themes/' ~ theme ~ '/jquery-ui.min.css'%}
+        <link rel="stylesheet" href="{{ asset(themePath) }}" type="text/css" media="all" />
+        <link rel="stylesheet" href="{{ asset('bundles/nixodbase/css/nixod.css') }}" type="text/css" media="all" />
+        
+
+        {%for cssLink in css%}
+            <link rel="stylesheet" href="{{ asset(cssLink) }}" type="text/css" media="all" />
+        {%endfor%}
+
+        <script type="text/javascript" src="{{asset('bundles/nixodbase/resources/jquery/jquery.min.js')}}"></script>
+        <script type="text/javascript" src="{{asset('bundles/nixodbase/resources/jquery-ui/ui/minified/jquery-ui.min.js')}}"></script>
+        <script type="text/javascript" src="{{asset('bundles/nixodbase/resources/jqdesktop/min.jquery.jqDesktop.js')}}"></script>
+        <script type="text/javascript" src="{{asset('bundles/nixodbase/resources/jquery.mousewheel-min.js')}}"></script>
+        
+        <script type="text/javascript" src="{{asset('bundles/nixodbase/js/nixod.js')}}"></script>
+        <script type="text/javascript" src="{{asset('bundles/nixodbase/js/load.js')}}"></script>
+        
+        {%for jsLink in js%}
+            <script type="text/javascript" src="{{asset(jsLink)}}"></script>
+        {%endfor%}
+    </head>
+    <body>
+        <script type="text/javascript">
+        var modules = {{modules | raw }};
+        </script>
+        <div id="desktop" class="ui-widget"></div>
+    </body>
+</html>

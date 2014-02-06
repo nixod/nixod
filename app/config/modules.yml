@@ -1,0 +1,2 @@
+parameters:
+    modules: [console, ssh, explorer, systemMonitor, user, cron]

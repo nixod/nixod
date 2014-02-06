@@ -1,0 +1,23 @@
+parameters:
+    module_console:
+            js: ['jquery.terminal-src.js', 'load.js']                
+            css: ['jquery.terminal.css', 'console.css']
+            layout:
+                title: "Terminal"
+                width: 600
+                height: 300
+                visible: false
+                icon: "bundles/moduleconsole/images/console.png"
+                closable: true
+                maximizable: true
+                minimizable: true
+                movable: true
+                resizable: true
+                defaultCloseOperation: 2
+                position: 'center'
+                showInTaskBar: true
+                showDesktopIcon: true
+                maximized: false
+    module_ssh:
+            layout: null
+            
