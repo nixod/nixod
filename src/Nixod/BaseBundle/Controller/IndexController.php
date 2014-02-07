@@ -9,9 +9,9 @@ class IndexController extends Controller {
 
     public function indexAction() {
         $sshService = $this->get('nixod_kernel.ssh');
-        $connection = $sshService->connect('s404086943.onlinehome.us', 'u67907459', 'catana3615');
+        //$connection = $sshService->connect('', '', '');
         
-        echo $connection->exec('ls');
+        //echo $connection->exec('ls');
         $theme = 'base/minified';
         $kernelService = $this->get("nixod_kernel.kernel");
         $modules = json_encode($kernelService->getModulesLayout());
