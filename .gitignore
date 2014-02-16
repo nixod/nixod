@@ -3,4 +3,7 @@ app/cache
 app/cache/*
 app/logs
 app/logs/*
-app/parameters.yml
+web/bundles/
+app/bootstrap*
+app/config/parameters.yml
+work

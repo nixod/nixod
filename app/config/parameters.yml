@@ -2,3 +2,15 @@
 parameters:
     locale: en
     secret: ThisTokenIsNotSoSecretChangeIt
+    ssh-manager:
+        # socket-type values:
+        # AF_UNIX: 1
+        # AF_INET: 2
+        socket-type: 1
+        # socket-address format:
+        # ipaddress:port when using AF_INET
+        # string representation, final socket path will be app/[socket-address].sock
+        socket-address: nixod
+        max-clients: 0
+        max-request-size: 0
+        idle-timeout: 0

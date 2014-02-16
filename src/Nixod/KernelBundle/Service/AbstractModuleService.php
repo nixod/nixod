@@ -1,6 +1,6 @@
 <?php
 
-namespace Nixod\Kernel\Service;
+namespace Nixod\KernelBundle\Service;
 
 class AbstractModuleService {
     

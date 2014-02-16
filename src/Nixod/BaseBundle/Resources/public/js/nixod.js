@@ -7,5 +7,9 @@ function Nixod(baseUrl){
         $.post(url, data, function(data){
             callback(data, extra);
         });
+    };
+    
+    this.error = function (message) {
+        console.log(message);
     }
 }

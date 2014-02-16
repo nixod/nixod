@@ -7,9 +7,10 @@
     <services>
         <service id="nixod_kernel.kernel" class="Nixod\KernelBundle\Service\KernelService">
             <argument type="service" id="service_container" />
+            <argument type="service" id="nixod_kernel.ssh" />
         </service>
         <service id="nixod_kernel.ssh" class="Nixod\KernelBundle\Service\SshService">
-            <!--<argument type="service" id="service_container" />-->
+            <argument type="service" id="service_container" />
         </service>
     </services>
 </container>

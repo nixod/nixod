@@ -3,7 +3,7 @@ $(function() {
         $('#console').terminal(function(command, term) {
             term.pause();
             Nixod.action('console', 'console', 'execute', {command:command}, function(data, term){
-               term.echo(data);
+               term.echo(data.response);
                term.resume();
             }, term);
         }, {prompt: '>', name: 'console', greetings:'Nixod Console'});

@@ -8,11 +8,8 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 class IndexController extends Controller {
 
     public function indexAction() {
-        $sshService = $this->get('nixod_kernel.ssh');
-        $connection = $sshService->connect('s404086943.onlinehome.us', 'u67907459', 'catana3615');
-        
-        echo $connection->exec('ls');
         $theme = 'base/minified';
+
         $kernelService = $this->get("nixod_kernel.kernel");
         $modules = json_encode($kernelService->getModulesLayout());
         return $this->render('NixodBaseBundle:Index:index.html.twig', array(

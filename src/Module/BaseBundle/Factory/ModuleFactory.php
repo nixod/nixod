@@ -14,7 +14,7 @@ class ModuleFactory {
         }
         $layout = new Layout();
         foreach (Layout::getFields() as $fieldName => $default) {
-            if(!empty($layoutData[$fieldName])) {
+            if(isset($layoutData[$fieldName])) {
                 $default = $layoutData[$fieldName];
             }
             $layout->{"set".  ucfirst($fieldName)}($default);

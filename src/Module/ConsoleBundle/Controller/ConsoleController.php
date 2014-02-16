@@ -10,11 +10,15 @@ class ConsoleController extends Controller
     public function executeAction($command)
     {
         $sshService = $this->get('nixod_kernel.ssh');
-        return new JsonResponse($this->formatOutput($sshService->exec($command)));
+        $response = array(
+            'response' => $this->formatOutput($sshService->exec($command)),
+            'cd' => $sshService->exec('pwd')
+        );
+        return new JsonResponse($response);
     }
     
     private function formatOutput($output) {
-        $output = implode("\n", $output);
+        //$output = implode("\n", $output);
         return $output;
     }
 }

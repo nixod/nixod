@@ -1,0 +1,20 @@
+parameters:
+    module_login:
+            js: ['load.js']
+            layout:
+                title: "Login"
+                width: 300
+                height: 140
+                visible: 'true'
+                icon: "bundles/modulelogin/images/login.png"
+                closable: false
+                maximizable: 0
+                minimizable: false
+                movable: true
+                resizable: false
+                defaultCloseOperation: 2
+                position: 'center'
+                showInTaskBar: false
+                showDesktopIcon: false
+                maximized: false
+                

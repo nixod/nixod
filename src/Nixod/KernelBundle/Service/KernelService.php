@@ -7,6 +7,7 @@ use Module\BaseBundle\Entity\Module;
 use Module\BaseBundle\Entity\Layout;
 use Module\BaseBundle\Exception\ModuleLoadingException;
 use Module\BaseBundle\Factory\ModuleFactory;
+use Nixod\KernelBundle\Service\SshService;
 
 class KernelService {
 
@@ -19,9 +20,11 @@ class KernelService {
     private $layouts;
     private $modulesJs;
     private $modulesCss;
+    private $sshService;
 
-    public function __construct(Container $container) {
+    public function __construct(Container $container, SshService $sshService) {
         $this->container = $container;
+        $this->sshService = $sshService;
         $this->loadModules();
     }
 
@@ -30,6 +33,10 @@ class KernelService {
         $this->layouts = array();
         $this->modulesJs = array();
         $this->modulesCss = array();
+        if(!$this->sshService->isConnected()) {
+            $this->loadModule('login');
+            return;
+        }
         foreach ($this->container->getParameter("modules")as $module) {
             $this->loadModule($module);
         }
@@ -40,7 +47,6 @@ class KernelService {
             throw new ModuleLoadingException(sprintf("Cannot load module [$moduleName], another module with the same name is already loaded"));
         }
         $module = $this->container->getParameter("module_$moduleName");
-        //print_r($module);
         if (empty($module)) {
             throw new ModuleLoadingException(sprintf("Error loading module [%s] cannot read parameters configuration from module.yml, or module.yml not found", $moduleName));
         }

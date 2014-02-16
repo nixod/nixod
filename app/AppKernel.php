@@ -21,6 +21,8 @@ class AppKernel extends Kernel
             new Module\CronBundle\ModuleCronBundle(),
             new Module\SystemMonitorBundle\ModuleSystemMonitorBundle(),
             new Module\UserBundle\ModuleUserBundle(),
+            new Nixod\SshManagerBundle\NixodSshManagerBundle(),
+            new Module\LoginBundle\ModuleLoginBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

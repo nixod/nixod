@@ -7,8 +7,6 @@ $(function(){
         //console.log(modules[m]);
         $('#desktop').append('<div id="window-'+m+'" class="nixod-window"/>');
         $.post(m, function(data){
-            console.log(data.module);
-            console.log(data);
            $('#window-'+data.module).html(data.html).trigger(data.module+'load', {desktop:$('#desktop'), window:$('#window-'+data.module)});
         });
         $('#desktop').jqDesktop('addWindow', $('#window-'+m).jqWindow(modules[m]));
