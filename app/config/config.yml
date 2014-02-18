@@ -38,3 +38,13 @@ assetic:
     #java: /usr/bin/java
     filters:
         cssrewrite: ~
+monolog:
+    handlers:
+        main:
+            type:     stream
+            path:     "%kernel.logs_dir%/nixod.log"
+            channels: ["!sshmanager"]
+        main:
+            type:     stream
+            path:     "%kernel.logs_dir%/sshmanager.log"
+            channels: [sshmanager]
